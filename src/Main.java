@@ -3,19 +3,18 @@ public class Main {
     public static void main(String[] args) {
 
         int amount; // сумма счета
-        int y;  // сумма пополнения
+        int refill;  // сумма пополнения
         amount = 500;
-        y = 230;
+        refill = 230;
         int bonus; // бонусы
-        if(y >=1000) {
-            bonus=y/100;
-        }
-        else {
+        if (refill >= 1000) {
+            bonus = refill / 100;
+        } else {
             bonus = 0;
         }
-        int x;
-        x = amount + y + bonus; //сумма после пополнения счета c начислением бонусов
+        int score;
+        score = amount + refill + bonus; //сумма после пополнения счета c начислением бонусов
         System.out.println("Бонус за пополнение: " + bonus);
-        System.out.println("Баланс: " + x);
+        System.out.println("Баланс: " + score);
     }
-    }
+}
